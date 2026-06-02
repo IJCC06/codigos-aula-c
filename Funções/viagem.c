@@ -61,4 +61,6 @@ int main() {
     scanf("%f", &consumoEtanol);
 
     viagem(km, precoGasolina, precoEtanol, consumoGasolina, consumoEtanol);
+
+    return 0;
 }

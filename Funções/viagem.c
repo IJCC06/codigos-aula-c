@@ -23,7 +23,15 @@ void viagem(int km, float precoGasolina, float precoEtanol, float consumoGasolin
     printf("\n---Valores no Etanol---");
     printf("\nConsumo = %.2f km/L", consumoEtanol);
     printf("\nLitros Consumidos = %.2f L", consumoLitrosEtanol);
-    printf("\nPreço Total = R$ %.2f", valorEtanol);
+    printf("\nPreço Total = R$ %.2f\n", valorEtanol);
+
+    if(valorEtanol < valorGasolina) {
+        printf("\nRECOMENDAMOS O USO DE ETANOL!");
+    } else if (valorEtanol > valorGasolina) {
+        printf("\nRECOMENDAMOS O USO DE GASOLINA!");
+    } else {
+        printf("VALORES MUITO PRÓXIMOS OU IGUAIS");
+    }
 }
 
 int main() {
